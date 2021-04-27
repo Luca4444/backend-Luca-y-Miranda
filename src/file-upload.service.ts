@@ -7,12 +7,12 @@ import { S3 } from 'aws-sdk';
 
 const AWS_S3_BUCKET_NAME = 'fotos-pagina-s3';
 const s3 = new AWS.S3();
-const AWS_SECRET_ACCESS_KEY = 'M4OztwOdFuymL25xG34ed70r4mc0u5BvJOQKmBmk';
+const AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY;
 
-const AWS_ACCESS_KEY_ID = 'AKIA2QIXGAKQHN4UDVWK';
+const AWS_ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY_ID;
 AWS.config.update({
-  accessKeyId: 'AKIA2QIXGAKQHN4UDVWK',
-  secretAccessKey: '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',
+  accessKeyId: AWS_ACCESS_KEY_ID,
+  secretAccessKey: AWS_SECRET_ACCESS_KEY,
 });
 
 @Injectable()
