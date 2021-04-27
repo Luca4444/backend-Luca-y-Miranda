@@ -5,6 +5,7 @@ import * as multerS3 from 'multer-s3';
 import { json } from 'express';
 import { S3 } from 'aws-sdk';
 
+
 const AWS_S3_BUCKET_NAME = 'fotos-pagina-s3';
 const s3 = new AWS.S3();
 const AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY;
