@@ -4,6 +4,7 @@ import {
   Post,
   Req,
   Res,
+  Get,
   UploadedFile,
   UseInterceptors,
 } from '@nestjs/common';
@@ -18,5 +19,9 @@ export class ImageUploadController {
   @UseInterceptors(FileInterceptor('file'))
   async upload(@UploadedFile() file) {
     return await this.imageUploadService.upload(file);
+  }
+  @Get('images')
+  ImgKeys(): Promise<any> {
+    return this.imageUploadService.ImgKeys();
   }
 }
