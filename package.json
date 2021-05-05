@@ -25,6 +25,7 @@
     "@nestjs/platform-express": "^7.6.15",
     "@nestjs/typeorm": "^7.1.5",
     "aws-sdk": "^2.891.0",
+    "core-util-is": "^1.0.2",
     "dotenv": "^8.2.0",
     "multer": "^1.4.2",
     "multer-s3": "^2.9.0",
