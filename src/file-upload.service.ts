@@ -87,7 +87,7 @@ export class ImageUploadService {
           //console.log(err, err.stack); // an error occurred
         } else {
           const contents = data.Contents;
-          contents.forEach(function(content) {
+          contents.forEach(function (content) {
             allKeys.push(content.Key);
           });
           //console.log(allKeys);
